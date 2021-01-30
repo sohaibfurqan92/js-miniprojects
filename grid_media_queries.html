@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,auto);
+            gap: 1rem;
+        }
+
+        @media(max-width: 768px){
+            .container{
+                grid-template-columns: repeat(2,auto);
+            }
+        }
+
+        @media(max-width: 500px){
+            .container{
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam ullam laudantium inventore enim exercitationem minus?</p>
+        </div>
+        <div class="item">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam ullam laudantium inventore enim exercitationem minus?</p>
+        </div>
+        <div class="item">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam ullam laudantium inventore enim exercitationem minus?</p>
+        </div>
+        <div class="item">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam ullam laudantium inventore enim exercitationem minus?</p>
+        </div>
+    </div>
+</body>
+</html>

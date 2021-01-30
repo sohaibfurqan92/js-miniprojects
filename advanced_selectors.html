@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* every paragraph in a div */
+        div p{
+            background: gray;
+        }
+
+        /* direct child */
+        div>p{
+            background-color: green;
+        }
+
+        /* directly after */
+
+        div+p{
+            background-color: red;
+            color: #fff;
+            font-size: 20px;
+        }
+        
+        /* By attribute */
+        a[target="_blank"]{
+            background: blue;
+            color: #fff;
+        }
+
+        /* specific values */
+        input[type="text"],
+        input[type="email"]{
+            width: 100%;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ut, accusamus.</p>
+        <ul>
+            <li>Item 1</li>
+        <li><p>Item 2</p></li>
+        <li>Item 3</li>
+        </ul>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, assumenda.</p>
+    </div>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo, temporibus!</p>
+    <a href="#">Page 1</a><a href="#" target="_self">Page 2</a>
+    <a href="google.com" target="_blank">google</a>
+    <form action="">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

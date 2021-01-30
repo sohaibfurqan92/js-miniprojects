@@ -1,0 +1,6 @@
+Destructuring assignment
+Rest pattern
+in objects with expressions
+array Destructuring people array
+parse array returned from function
+//Object Destructuring - old es5, new es6
